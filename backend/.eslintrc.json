@@ -25,14 +25,20 @@
     "rules": {
       "prettier/prettier": "error",
       "class-methods-use-this":"off",
+      "no-console":"off",
+      "@typescript-eslint/camelcase": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error", {
+          "argsIgnorePattern": "next"
+        }
+      ],
       "import/extensions": [
         "error",
         "ignorePackages",
         {
           "ts": "never"
         }
-      ],
-      "camelcase": "off"
+      ]
     },
     "settings": {
       "import/resolver": {
